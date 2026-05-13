@@ -21,3 +21,6 @@ vendor/
 
 # System
 .DS_Store
+
+#Temporary files
+tmp/
