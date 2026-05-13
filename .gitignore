@@ -1,0 +1,23 @@
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# Environments
+.env
+
+# Dependencies
+vendor/
+
+# Coverage
+*.out
+*.coverprofile
+
+# IDEs
+.idea/
+.vscode/
+
+# System
+.DS_Store
