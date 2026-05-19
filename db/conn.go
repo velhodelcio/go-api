@@ -8,14 +8,14 @@ import (
 )
 
 const (
-	host     = "go_db"
+	host     = "go-db"
 	port     = 5432
 	user     = "postgres"
 	password = "12345"
 	dbname   = "postgres"
 )
 
-func ConenctDB() (*sql.DB, error) {
+func ConnectDB() (*sql.DB, error) {
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
 		"password=%s dbname=%s sslmode=disable",
 		host, port, user, password, dbname)
