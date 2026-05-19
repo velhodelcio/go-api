@@ -12,7 +12,7 @@ import (
 func main() {
 	server := gin.Default()
 
-	dbConnection, err := db.ConenctDB()
+	dbConnection, err := db.ConnectDB()
 	if err != nil {
 		panic(err)
 	}
@@ -34,6 +34,7 @@ func main() {
 	server.POST("/product", ProductController.CreateProduct)
 	server.GET("/product/:productId", ProductController.GetProductById)
 	server.DELETE("/product/:productId", ProductController.DeleteProductById)
+	server.PUT("/product", ProductController.UpdateProduct)
 
 	server.Run(":8000")
 }
